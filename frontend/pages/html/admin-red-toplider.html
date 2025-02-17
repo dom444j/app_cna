@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+    data-assets-path="../../public/assets/">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <title>Admin Overview | CNA</title>
+    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="../../public/assets/img/favicon/favicon.png" />
+    <link rel="stylesheet" href="../../public/assets/vendor/fonts/boxicons.css" />
+    <link rel="stylesheet" href="../../public/assets/vendor/css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="../../public/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="../../public/assets/css/demo.css" />
+    <link rel="stylesheet" href="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="../../public/assets/vendor/libs/apex-charts/apex-charts.css" />
+    <script src="../../public/assets/vendor/js/helpers.js"></script>
+    <script src="../../public/assets/js/config.js"></script>
+
+
+
+</head>
+
+<body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+        <div class="layout-container">
+            <!-- Menu -->
+            <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+                <div class="app-brand demo">
+                    <a href="user-tablero.html" class="app-brand-link gap-2">
+                        <span class="app-brand-logo demo">
+                            <img src="../../public/assets/img/logo/logo.png" alt="Logo" width="120" />
+                        </span>
+                    </a>
+
+                    <a href="javascript:void(0);"
+                        class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                        <i class="bx bx-chevron-left bx-sm align-middle"></i>
+                    </a>
+                </div>
+
+                <div class="menu-inner-shadow"></div>
+
+                <li class="menu-header small text-uppercase">
+                    <span class="menu-header-text">Tablero</span>
+                </li>
+
+                <ul class="menu-inner py-1">
+                    <!-- Dashboard -->
+                    <li class="menu-item">
+                        <a href="admin-overview.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-home-circle"></i>
+                            <div data-i18n="Analytics">Panel de Control</div>
+                        </a>
+                    </li>
+                    <!-- Gestión de Usuarios -->
+                    <li class="menu-item">
+                        <a href="admin-gestionuser.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-user"></i>
+                            <div data-i18n="Basic">Gestión de Usuarios</div>
+                        </a>
+                    </li>
+                    <!-- Red de Usuarios -->
+                    <li class="menu-item active open">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-network-chart"></i>
+                            <div data-i18n="Layouts">Red de Usuarios</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-binary-view.html" class="menu-link">
+                                    <div data-i18n="Without menu">Vista Binario</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-unilevel-view.html" class="menu-link">
+                                    <div data-i18n="Without menu">Árbol de Matriculador</div>
+                                </a>
+                            </li>
+                            <li class="menu-item active">
+                                <a href="admin-red-toplider.html" class="menu-link">
+                                    <div data-i18n="Without navbar">Top Líder</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-red-reportered.html" class="menu-link">
+                                    <div data-i18n="Container">reporte de Red</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Ventas y Productos -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-store"></i>
+                            <div data-i18n="Layouts">Ventas y Productos</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-ventas-tiendaactivate.html" class="menu-link">
+                                    <div data-i18n="Without menu">Tienda Activate</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-ventas-tiendacredito.html" class="menu-link">
+                                    <div data-i18n="Without menu">Tienda Credito</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-ventas-inventario.html" class="menu-link">
+                                    <div data-i18n="Without navbar">Inventario</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-ventas-ventasperiodo.html" class="menu-link">
+                                    <div data-i18n="Container">Ventas por Periodo</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Banca CNA -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bxs-bank"></i>
+                            <div data-i18n="Layouts">Banca CNA</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-banca-saldos.html" class="menu-link">
+                                    <div data-i18n="Without menu">Saldos</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-banca-tranferencia.html" class="menu-link">
+                                    <div data-i18n="Without menu">Transferencias</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-banca-historial.html" class="menu-link">
+                                    <div data-i18n="Without navbar">Historial de Transacciones</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-banca-retiros.html" class="menu-link">
+                                    <div data-i18n="Container">Retiros</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Compensación -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-money"></i>
+                            <div data-i18n="Layouts">Compensación</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-compensacion-comisiones.html" class="menu-link">
+                                    <div data-i18n="Without menu">Comisiones</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-compensacion-rbonos.html" class="menu-link">
+                                    <div data-i18n="Without menu">Reportes de Bonos</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-compensacion-grango.html" class="menu-link">
+                                    <div data-i18n="Without navbar">Gestión de Rangos</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-compensacion-ajusteacti.html" class="menu-link">
+                                    <div data-i18n="Container">Ajustes de Activación</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Ajuste de Bonos -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cog"></i>
+                            <div data-i18n="Layouts">Ajuste de Bonos</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-ajustecompensacion.html" class="menu-link">
+                                    <div data-i18n="Without menu">Ajuste Compensación</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-ajuste-bonos.html" class="menu-link">
+                                    <div data-i18n="Without menu">Ajustes de Bonos</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- Reportes -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-bar-chart"></i>
+                            <div data-i18n="Layouts">Reportes</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-reportes-rg.html" class="menu-link">
+                                    <div data-i18n="Without menu">Reporte General</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-reportes-tp.html" class="menu-link">
+                                    <div data-i18n="Without menu">Top Performers</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-reportes-pb.html" class="menu-link">
+                                    <div data-i18n="Without navbar">Puntos y Bonos</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-reportes-infpagos.html" class="menu-link">
+                                    <div data-i18n="Container">Informe de Pagos</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- mensajes admin -->
+                    <li class="menu-item">
+                        <a href="admin-mensaje.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-envelope"></i>
+                            <div data-i18n="Basic">Mensajes</div>
+                        </a>
+                    </li>
+                    <!-- Configuración -->
+                    <li class="menu-item">
+                        <a href="javascript:void(0);" class="menu-link menu-toggle">
+                            <i class="menu-icon tf-icons bx bx-cog"></i>
+                            <div data-i18n="Layouts">Configuración</div>
+                        </a>
+
+                        <ul class="menu-sub">
+                            <li class="menu-item">
+                                <a href="admin-conf-ajustesis.html" class="menu-link">
+                                    <div data-i18n="Without menu">Ajustes del Sistema</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="admin-conf-gestionroles.html" class="menu-link">
+                                    <div data-i18n="Without menu">Gestión de Roles</div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="madmin-conf-gestioncontenido.html" class="menu-link">
+                                    <div data-i18n="Container">Gestión de Contenido</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- cerrar sesión -->
+                    <li class="menu-item">
+                        <a href="auth-login-basic.html" class="menu-link">
+                            <i class="menu-icon tf-icons bx bx-power-off"></i>
+                            <div data-i18n="Logout">Cerrar Sesión</div>
+                        </a>
+                    </li>
+
+                    <li class="menu-header small text-uppercase">
+
+                    </li>
+                </ul>
+            </aside>
+
+
+
+
+            <!-- / Menu -->
+
+            <!-- Layout container -->
+            <div class="layout-page">
+                <!-- Navbar -->
+                <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+                    id="layout-navbar">
+                    <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                            <i class="bx bx-menu bx-sm"></i>
+                        </a>
+                    </div>
+
+                    <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+                        <!-- Información de estado y próxima compra -->
+                        <div class="navbar-nav align-items-center">
+                            <div class="nav-item d-flex flex-column align-items-start me-4">
+                                <span class="fw-semibold text-primary">Estado: <span
+                                        class="badge bg-success">Activo</span></span>
+                                <small class="text-muted mt-1">Próxima compra en: <strong>24D:14H:35M</strong></small>
+                            </div>
+                        </div>
+
+                        <!-- Enlaces de usuario -->
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+                            <!-- User -->
+                            <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);"
+                                    data-bs-toggle="dropdown">
+                                    <div class="avatar avatar-online">
+                                        <img src="../../public/assets/img/avatars/1.png" alt
+                                            class="w-px-40 h-auto rounded-circle" />
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <div class="avatar avatar-online">
+                                                        <img src="../../public/assets/img/avatars/1.png" alt
+                                                            class="w-px-40 h-auto rounded-circle" />
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1">
+                                                    <span class="fw-semibold d-block">Juan Ortega</span>
+                                                    <small class="text-muted">Admin</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="miperfil.html">
+                                            <i class="bx bx-user me-2"></i>
+                                            <span class="align-middle">Mi Perfil</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="user-configuracion.html">
+                                            <i class="bx bx-cog me-2"></i>
+                                            <span class="align-middle">Configuración</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-divider"></div>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="auth-login-basic.html">
+                                            <i class="bx bx-power-off me-2"></i>
+                                            <span class="align-middle">Cerrar Sesión</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--/ User -->
+                        </ul>
+                    </div>
+                </nav>
+                <!-- / Navbar -->
+
+                <div class="content-wrapper">
+                    <div class="container-xxl flex-grow-1 container-p-y">
+                        <!-- Encabezado -->
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 class="mb-0">Panel de Gestión - Top Líderes</h4>
+                        </div>
+
+                        <!-- Cards de Resumen General -->
+                        <div class="row mb-4">
+                            <!-- Card: Total Usuarios Top -->
+                            <div class="col-lg-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bx bx-star bx-lg text-warning mb-2"></i>
+                                        <h6 class="mb-2">Usuarios Destacados del Periodo</h6>
+                                        <h4 class="text-warning mb-0">15</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: Premios Otorgados -->
+                            <div class="col-lg-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bx bx-award bx-lg text-success mb-2"></i>
+                                        <h6 class="mb-2">Premios Otorgados</h6>
+                                        <h4 class="text-success mb-0">$10,500 USD</h4>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card: Usuarios en Riesgo -->
+                            <div class="col-lg-4">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <i class="bx bx-bell bx-lg text-danger mb-2"></i>
+                                        <h6 class="mb-2">Alertas de Calificación</h6>
+                                        <h4 class="text-danger mb-0">4 Usuarios en Riesgo</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pestañas de navegación -->
+                        <ul class="nav nav-tabs" id="topTabs" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="top-leader-tab" data-bs-toggle="tab"
+                                    data-bs-target="#top-leader" type="button" role="tab" aria-controls="top-leader"
+                                    aria-selected="true">Top Líder</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="top-recruiter-tab" data-bs-toggle="tab"
+                                    data-bs-target="#top-recruiter" type="button" role="tab"
+                                    aria-controls="top-recruiter" aria-selected="false">Top Reclutador</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="top-seller-tab" data-bs-toggle="tab"
+                                    data-bs-target="#top-seller" type="button" role="tab" aria-controls="top-seller"
+                                    aria-selected="false">Top Vendedor</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="config-tab" data-bs-toggle="tab"
+                                    data-bs-target="#config-settings" type="button" role="tab"
+                                    aria-controls="config-settings" aria-selected="false">Configuración</button>
+                            </li>
+                        </ul>
+
+                        <!-- Contenido de las pestañas -->
+                        <div class="tab-content mt-4" id="topTabsContent">
+
+                            <!-- Tab Top Líder -->
+                            <div class="tab-pane fade show active" id="top-leader" role="tabpanel"
+                                aria-labelledby="top-leader-tab">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5>Top Líderes del Periodo Actual</h5>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- Campo de búsqueda -->
+                                        <input type="text" class="form-control" id="searchTopLeaderTable"
+                                            placeholder="Buscar...">
+                                        <button class="btn btn-success btn-sm" id="exportTopLeaderBtn">Exportar a
+                                            CSV</button>
+
+                                    </div>
+                                </div>
+                                <div id="loadingSpinner" class="text-center d-none">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Cargando...</span>
+                                    </div>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped" id="topLeaderTable">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Rango</th>
+                                                <th>Estado</th>
+                                                <th>Puntos Acumulados</th>
+                                                <th>Total Reclutados/Ventas</th>
+                                                <th>Premios Ganados</th>
+                                                <th>Fecha de Registro</th>
+                                                <th>Fecha de Última Calificación</th>
+                                                <th>Nivel de Alerta</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Filas de ejemplo -->
+                                            <tr>
+                                                <td>1</td>
+                                                <td>U123</td>
+                                                <td>Juan Ortega</td>
+                                                <td>Líder Senior</td>
+                                                <td><span class="badge bg-success">Activo</span></td>
+                                                <td>5,200</td>
+                                                <td>15</td>
+                                                <td>Viaje de Incentivo</td>
+                                                <td>2020-08-12</td>
+                                                <td>2023-09-05</td>
+                                                <td><span class="badge bg-warning">🟠 Casi calificado</span></td>
+                                                <td>
+                                                    <button class="btn btn-outline-info btn-sm">Ver Detalles</button>
+                                                    <button class="btn btn-outline-success btn-sm">Asignar
+                                                        Premio</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class="alert alert-info">
+                                        Total participantes: <strong>30</strong> | Premios otorgados en este periodo:
+                                        <strong>$15,000 USD</strong>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tab Top Reclutador -->
+                            <div class="tab-pane fade" id="top-recruiter" role="tabpanel"
+                                aria-labelledby="top-recruiter-tab">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5>Top Reclutadores del Periodo Actual</h5>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- Campo de búsqueda -->
+                                        <input type="text" class="form-control" id="searchTopRecruiterTable"
+                                            placeholder="Buscar...">
+                                        <button class="btn btn-success btn-sm" id="exportTopRecruiterBtn">Exportar a
+                                            CSV</button>
+
+                                    </div>
+                                </div>
+
+                                <!-- Spinner de carga -->
+                                <div id="loadingSpinnerRecruiter" class="text-center d-none">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Cargando...</span>
+                                    </div>
+                                </div>
+
+
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped" id="topRecruiterTable">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Rango</th>
+                                                <th>Estado</th>
+                                                <th>Total Nuevos Reclutas</th>
+                                                <th>Premios Ganados</th>
+                                                <th>Fecha de Registro</th>
+                                                <th>Fecha de Última Calificación</th>
+                                                <th>Nivel de Alerta</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Filas de ejemplo -->
+                                            <tr>
+                                                <td>1</td>
+                                                <td>U124</td>
+                                                <td>María Gómez</td>
+                                                <td>Consultor</td>
+                                                <td><span class="badge bg-success">Activo</span></td>
+                                                <td>8</td>
+                                                <td>Reconocimiento Especial</td>
+                                                <td>2021-05-14</td>
+                                                <td>2023-10-08</td>
+                                                <td><span class="badge bg-warning">🟠 Casi calificado</span></td>
+                                                <td>
+                                                    <button class="btn btn-outline-info btn-sm">Ver Detalles</button>
+                                                    <button class="btn btn-outline-success btn-sm">Asignar
+                                                        Premio</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class="alert alert-info">
+                                        Total participantes: <strong>20</strong> | Premios otorgados en este periodo:
+                                        <strong>$10,000 USD</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Tab Top Vendedor -->
+                            <div class="tab-pane fade" id="top-seller" role="tabpanel" aria-labelledby="top-seller-tab">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h5>Top Vendedores del Periodo Actual</h5>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <!-- Campo de búsqueda -->
+                                        <input type="text" class="form-control" id="searchTopSellerTable"
+                                            placeholder="Buscar...">
+                                        <button class="btn btn-success btn-sm" id="exportTopSellerBtn">Exportar a
+                                            CSV</button>
+
+                                    </div>
+                                </div>
+
+                                <!-- Spinner de carga -->
+                                <div id="loadingSpinnerSeller" class="text-center d-none">
+                                    <div class="spinner-border text-primary" role="status">
+                                        <span class="visually-hidden">Cargando...</span>
+                                    </div>
+                                </div>
+
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-striped" id="topSellerTable">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>ID</th>
+                                                <th>Nombre</th>
+                                                <th>Rango</th>
+                                                <th>Estado</th>
+                                                <th>Total Ventas</th>
+                                                <th>Premios Ganados</th>
+                                                <th>Fecha de Registro</th>
+                                                <th>Fecha de Última Calificación</th>
+                                                <th>Nivel de Alerta</th>
+                                                <th>Acciones</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Filas de ejemplo -->
+                                            <tr>
+                                                <td>1</td>
+                                                <td>U456</td>
+                                                <td>Carlos Pérez</td>
+                                                <td>Vendedor Senior</td>
+                                                <td><span class="badge bg-success">Activo</span></td>
+                                                <td>$12,000 USD</td>
+                                                <td>Viaje Corporativo</td>
+                                                <td>2019-03-22</td>
+                                                <td>2023-08-10</td>
+                                                <td><span class="badge bg-success">🟢 Calificado</span></td>
+                                                <td>
+                                                    <button class="btn btn-outline-info btn-sm">Ver Detalles</button>
+                                                    <button class="btn btn-outline-success btn-sm">Asignar
+                                                        Premio</button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-3">
+                                    <div class="alert alert-info">
+                                        Total participantes: <strong>25</strong> | Premios otorgados en este periodo:
+                                        <strong>$18,000 USD</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Tab Configuración -->
+                            <div class="tab-pane fade" id="config-settings" role="tabpanel"
+                                aria-labelledby="config-tab">
+                                <h5>Configuración de Premios y Periodos</h5>
+                                <div class="row mb-4">
+                                    <!-- Configuración para Top Líder -->
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Top Líder</h6>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="leaderPointsThreshold" class="form-label">Puntos
+                                                            Mínimos</label>
+                                                        <input type="number" class="form-control"
+                                                            id="leaderPointsThreshold" value="5000">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="leaderRewardType" class="form-label">Tipo de
+                                                            Premio</label>
+                                                        <select class="form-select" id="leaderRewardType">
+                                                            <option value="cash">Efectivo</option>
+                                                            <option value="travel">Viaje</option>
+                                                            <option value="recognition">Reconocimiento</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="leaderPeriodType" class="form-label">Periodo</label>
+                                                        <select class="form-select" id="leaderPeriodType">
+                                                            <option value="monthly">Mensual</option>
+                                                            <option value="quarterly">Trimestral</option>
+                                                            <option value="yearly">Anual</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- Configuración de montos por niveles -->
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Bonos por Niveles</label>
+                                                        <div id="leaderRewardLevels" class="d-flex flex-column gap-2">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 1</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 1" required>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 2</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 2">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 3</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 3">
+                                                            </div>
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary btn-sm mt-2"
+                                                                id="addLevelBtn">
+                                                                Añadir Nivel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Guardar
+                                                        Cambios</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Configuración para otros tipos (Top Reclutador y Top Vendedor) -->
+                                    <div class="col-lg-4">
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Top Reclutador</h6>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="recruiterPointsThreshold" class="form-label">Nuevos
+                                                            Reclutas Mínimos</label>
+                                                        <input type="number" class="form-control"
+                                                            id="recruiterPointsThreshold" value="5">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recruiterRewardType" class="form-label">Tipo de
+                                                            Premio</label>
+                                                        <select class="form-select" id="recruiterRewardType">
+                                                            <option value="cash">Efectivo</option>
+                                                            <option value="travel">Viaje</option>
+                                                            <option value="recognition">Reconocimiento</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="recruiterPeriodType"
+                                                            class="form-label">Periodo</label>
+                                                        <select class="form-select" id="recruiterPeriodType">
+                                                            <option value="monthly">Mensual</option>
+                                                            <option value="quarterly">Trimestral</option>
+                                                            <option value="yearly">Anual</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- Configuración de montos por niveles -->
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Bonos por Niveles</label>
+                                                        <div id="leaderRewardLevels" class="d-flex flex-column gap-2">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 1</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 1" required>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 2</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 2">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 3</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 3">
+                                                            </div>
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary btn-sm mt-2"
+                                                                id="addLevelBtn">
+                                                                Añadir Nivel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Guardar
+                                                        Cambios</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Configuración para Top Vendedor-->
+                                    <div class="col-lg-4">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h6 class="card-title">Top Vendedor</h6>
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="leaderPointsThreshold" class="form-label">Ventas
+                                                            Mínimas</label>
+                                                        <input type="number" class="form-control"
+                                                            id="leaderPointsThreshold" value="10000">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="leaderRewardType" class="form-label">Tipo de
+                                                            Premio</label>
+                                                        <select class="form-select" id="leaderRewardType">
+                                                            <option value="cash">Efectivo</option>
+                                                            <option value="travel">Viaje</option>
+                                                            <option value="recognition">Reconocimiento</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="leaderPeriodType" class="form-label">Periodo</label>
+                                                        <select class="form-select" id="leaderPeriodType">
+                                                            <option value="monthly">Mensual</option>
+                                                            <option value="quarterly">Trimestral</option>
+                                                            <option value="yearly">Anual</option>
+                                                        </select>
+                                                    </div>
+                                                    <!-- Configuración de montos por niveles -->
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Bonos por Niveles</label>
+                                                        <div id="leaderRewardLevels" class="d-flex flex-column gap-2">
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 1</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 1" required>
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 2</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 2">
+                                                            </div>
+                                                            <div class="input-group">
+                                                                <span class="input-group-text">Nivel 3</span>
+                                                                <input type="number" class="form-control"
+                                                                    placeholder="Monto para Nivel 3">
+                                                            </div>
+                                                            <button type="button"
+                                                                class="btn btn-outline-primary btn-sm mt-2"
+                                                                id="addLevelBtn">
+                                                                Añadir Nivel
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Guardar
+                                                        Cambios</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                                <!-- Botón para añadir premios -->
+                                <button class="btn btn-primary" id="addAwardBtn" data-bs-toggle="modal"
+                                    data-bs-target="#awardModal">
+                                    Añadir Premio
+                                </button>
+
+
+                                <!-- Tabla de premios configurados -->
+                                <div class="card mt-4">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Premios Configurados</h6>
+                                        <table class="table table-hover table-striped" id="awardsTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Tipo de Top</th>
+                                                    <th>Requisito Mínimo</th>
+                                                    <th>Tipo de Premio</th>
+                                                    <th>Periodo</th>
+                                                    <th>Valido</th>
+                                                    <th>Niveles de Bono</th>
+                                                    <th>Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- Ejemplo de fila -->
+                                                <tr>
+                                                    <td>001</td>
+                                                    <td>Top Líder</td>
+                                                    <td>5000 Puntos</td>
+                                                    <td>Efectivo</td>
+                                                    <td>Mensual</td>
+                                                    <td>12/2025</td>
+                                                    <td>Nivel 1: $500, Nivel 2: $300, Nivel 3: $150</td>
+                                                    <td>
+                                                        <button class="btn btn-outline-info btn-sm">Editar</button>
+                                                        <button class="btn btn-outline-danger btn-sm">Eliminar</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Modal de ejemplo -->
+                    <div class="modal fade" id="awardModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Gestionar Premio</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="awardForm">
+                                        <div class="mb-3">
+                                            <label for="awardType" class="form-label">Tipo de Top</label>
+                                            <select class="form-select" id="awardType">
+                                                <option value="leader">Top Líder</option>
+                                                <option value="recruiter">Top Reclutador</option>
+                                                <option value="seller">Top Vendedor</option>
+                                            </select>
+                                        </div>
+                                        <!-- Otros campos aquí -->
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Footer -->
+                    <footer class="content-footer footer bg-footer-theme">
+                        <div class="container-xxl d-flex justify-content-between align-items-center py-2">
+                            <div class="text-center text-md-start mb-2 mb-md-0">
+                                © <span id="currentYear">2025</span>, Hecho con ❤️ by
+                                <a href="https://domsoft.dev" class="footer-link fw-bolder"
+                                    aria-label="Ir al sitio web de DomSoft">DomSoft</a>
+                            </div>
+                            <div class="d-flex gap-4">
+                                <a href="/politicas.html" class="footer-link"
+                                    aria-label="Ver políticas de privacidad">Políticas</a>
+                                <a href="/soporte.html" class="footer-link"
+                                    aria-label="Ver página de soporte">Soporte</a>
+                            </div>
+                        </div>
+                    </footer>
+
+                    <script>
+                        // Actualización del año de forma dinámica
+                        document.getElementById('currentYear').innerText = new Date().getFullYear();
+                    </script>
+
+                    <!-- / Footer -->
+                </div>
+                <!-- / Layout page -->
+            </div>
+        </div>
+
+        <!-- JS Scripts -->
+        <script src="../../public/assets/vendor/libs/jquery/jquery.js"></script>
+        <script src="../../public/assets/vendor/libs/popper/popper.js"></script>
+        <script src="../../public/assets/vendor/js/bootstrap.js"></script>
+        <script src="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+        <script src="../../public/assets/js/gestion-unilevel-tree.js"></script>
+        <script src="../../public/assets/js/gestiontoplider-unilevel-report.js"></script>
+        <script src="../../public/assets/vendor/js/menu.js"></script>
+        <script src="../../public/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+        <script src="../../public/assets/js/main.js"></script>
+        <script src="../../public/assets/js/admin-menu.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+
+
+
+        <script>
+            // Inicialización de gráfico de ingresos
+            const options = {
+                chart: {
+                    type: 'line'
+                },
+                series: [{
+                    name: 'Ingresos',
+                    data: [4500, 5200, 6100, 7200, 8400]
+                }],
+                xaxis: {
+                    categories: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo']
+                }
+            };
+            const chart = new ApexCharts(document.querySelector("#monthlyIncomeChart"), options);
+            chart.render();
+        </script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const ctx = document.getElementById('paymentSummaryCanvas').getContext('2d');
+
+                new Chart(ctx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Pagado', 'Pendiente'],
+                        datasets: [{
+                            data: [8400, 2400],
+                            backgroundColor: ['#28a745', '#ffc107']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        cutout: '70%',
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../../public/assets/"
+  data-template="vertical-menu-template-free">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Dashboard | CNA</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../public/assets/img/favicon/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" href="../../public/assets/vendor/fonts/boxicons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../public/assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../../public/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="../../public/assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+  <link rel="stylesheet" href="../../public/assets/vendor/libs/apex-charts/apex-charts.css" />
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script src="../../public/assets/vendor/js/helpers.js"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="../../public/assets/js/config.js"></script>
+</head>
+
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
+
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="user-tablero.html" class="app-brand-link gap-2">
+            <span class="app-brand-logo demo">
+              <img src="../../public/assets/img/logo/logo.png" alt="Logo" width="120" />
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+          </a>
+        </div>
+
+        <div class="menu-inner-shadow"></div>
+
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Tienda Activate</span>
+        </li>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboard -->
+          <li class="menu-item">
+            <a href="user-tablero.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Analytics">Panel de Control</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item active">
+            <a href="tienda-activate.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-store-alt"></i>
+              <div data-i18n="Basic">Tienda Activate</div>
+            </a>
+          </li>
+
+
+          <!-- Mi red -->
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bxs-network-chart"></i>
+              <div data-i18n="Layouts">Mi Red</div>
+            </a>
+
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="user-mired-misbonos.html" class="menu-link">
+                  <div data-i18n="Without menu">Mis Bonos</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-misdirectos.html" class="menu-link">
+                  <div data-i18n="Without menu">Mis Directos</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-vistabinario.html" class="menu-link">
+                  <div data-i18n="Without navbar">Vista Binario</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-arbolmatriculador.html" class="menu-link">
+                  <div data-i18n="Container">Arbol de Matriculador</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-toplider.html" class="menu-link">
+                  <div data-i18n="Fluid">Top Líder</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-topventas.html" class="menu-link">
+                  <div data-i18n="Fluid">Top Ventas</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-topreclutador.html" class="menu-link">
+                  <div data-i18n="Blank">Top Reclutador</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-tiendacredito.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-store"></i>
+              <div data-i18n="Basic">Tienda de Crédito</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-saldowallet.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-wallet"></i>
+              <div data-i18n="Basic">Saldos Wallet</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-retiros.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+              <div data-i18n="Basic">Retiros</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-bancacna.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bxs-bank"></i>
+              <div data-i18n="Basic">Banca CNA</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-mensaje.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-envelope"></i>
+              <div data-i18n="Basic">Mensajes</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-herramientas.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-unlink"></i>
+              <div data-i18n="Basic">Herramientas</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-configuracion.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-cog"></i>
+              <div data-i18n="Basic">Configuración</div>
+            </a>
+          </li>
+
+          <li class="menu-header small text-uppercase">
+
+          </li>
+        </ul>
+      </aside>
+      <!-- / Menu -->
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <!-- Navbar -->
+
+       <!-- Barra de nav -->
+       <nav
+       class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+       id="layout-navbar">
+       <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+         <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+           <i class="bx bx-menu bx-sm"></i>
+         </a>
+       </div>
+
+       <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+         <!-- Información de estado y próxima compra -->
+         <div class="navbar-nav align-items-center">
+           <div class="nav-item d-flex flex-column align-items-start me-4">
+             <span class="fw-semibold text-primary">Estado: <span class="badge bg-success">Activo</span></span>
+             <small class="text-muted mt-1">Próxima compra en: <strong>24D:14H:35M</strong></small>
+           </div>
+         </div>
+
+         <!-- Enlaces de usuario -->
+         <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+           <!-- User -->
+           <li class="nav-item navbar-dropdown dropdown-user dropdown">
+             <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+               <div class="avatar avatar-online">
+                 <img src="../../public/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+               </div>
+             </a>
+             <ul class="dropdown-menu dropdown-menu-end">
+               <li>
+                 <a class="dropdown-item" href="#">
+                   <div class="d-flex">
+                     <div class="flex-shrink-0 me-3">
+                       <div class="avatar avatar-online">
+                         <img src="../../public/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                       </div>
+                     </div>
+                     <div class="flex-grow-1">
+                       <span class="fw-semibold d-block">Juan Ortega</span>
+                       <small class="text-muted">Admin</small>
+                     </div>
+                   </div>
+                 </a>
+               </li>
+               <li>
+                 <div class="dropdown-divider"></div>
+               </li>
+               <li>
+                 <a class="dropdown-item" href="miperfil.html">
+                   <i class="bx bx-user me-2"></i>
+                   <span class="align-middle">Mi Perfil</span>
+                 </a>
+               </li>
+               <li>
+                 <a class="dropdown-item" href="user-configuracion.html">
+                   <i class="bx bx-cog me-2"></i>
+                   <span class="align-middle">Configuración</span>
+                 </a>
+               </li>
+               <li>
+                 <div class="dropdown-divider"></div>
+               </li>
+               <li>
+                 <a class="dropdown-item" href="auth-login-basic.html">
+                   <i class="bx bx-power-off me-2"></i>
+                   <span class="align-middle">Cerrar Sesión</span>
+                 </a>
+               </li>
+             </ul>
+           </li>
+           <!--/ User -->
+         </ul>
+       </div>
+     </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+              <!-- Columna Izquierda para Categorías (8 columnas) -->
+              <div class="col-lg-8 d-flex flex-column">
+        
+                <!-- Categoría 1 -->
+                <div class="card mb-4">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Terceros HC Wellness</h5>
+                    <span class="badge bg-label-primary">4 Productos</span>
+                  </div>
+                  <div class="card-body">
+                    <!-- Producto 1 -->
+                    <div class="row g-2 mb-3 p-2 border rounded">
+                      <!-- Imagen -->
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/hemp-c.png"
+                          alt="Prod 1"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <!-- Descripción -->
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Hemp-C</h5>
+                        <p class="text-muted mb-1">
+                          El mayor beneficio es apoyar en la regulación y mejora del funcionamiento de los sistemas,
+                          tales como: neurológico, musculoesquelético, cardiovascular, respiratorio, digestivo y
+                          endocrinológico. Su presentación es un gotero de 30 ml. Y su aplicación es sublingual.
+                        </p>
+                        <small class="text-muted d-block">Incluye IVA | 10 Puntos</small>
+                        <strong>$360.000</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                    <!-- Producto 2 -->
+                    <div class="row g-2 mb-3 p-2 border rounded">
+                      <!-- Imagen -->
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/2.jpg"
+                          alt="Prod 2"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <!-- Descripción -->
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Producto 2</h5>
+                        <p class="text-muted mb-1">
+                          El mayor beneficio es apoyar en la regulación y mejora del funcionamiento de los sistemas,
+                          tales como: neurológico, musculoesquelético, cardiovascular, respiratorio, digestivo y
+                          endocrinológico. Su presentación es un gotero de 30 ml. Y su aplicación es sublingual.
+                        </p>
+                        <small class="text-muted d-block">Incluye IVA | 15 Puntos</small>
+                        <strong>$300.000</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                    <!-- Producto 3 -->
+                    <div class="row g-2 mb-3 p-2 border rounded">
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/18.jpg"
+                          alt="Prod 3"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Producto 3</h5>
+                        <p class="text-muted mb-1">
+                          El mayor beneficio es apoyar en la regulación y mejora del funcionamiento de los sistemas,
+                          tales como: neurológico, musculoesquelético, cardiovascular, respiratorio, digestivo y
+                          endocrinológico. Su presentación es un gotero de 30 ml. Y su aplicación es sublingual.
+                        </p>
+                        <small class="text-muted d-block">Incluye IVA | 20 Puntos</small>
+                        <strong>$40.00</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                    <!-- Producto 4 -->
+                    <div class="row g-2 p-2 border rounded">
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/13.jpg"
+                          alt="Prod 4"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Producto 4</h5>
+                        <p class="text-muted mb-1">
+                          El mayor beneficio es apoyar en la regulación y mejora del funcionamiento de los sistemas,
+                          tales como: neurológico, musculoesquelético, cardiovascular, respiratorio, digestivo y
+                          endocrinológico. Su presentación es un gotero de 30 ml. Y su aplicación es sublingual.
+                        </p>
+                        <small class="text-muted d-block">Incluye IVA | 25 Puntos</small>
+                        <strong>$50.00</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        
+                <!-- Categoría 2 -->
+                <div class="card mb-4">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Línea Corporativa</h5>
+                    <span class="badge bg-label-primary">3 Productos</span>
+                  </div>
+                  <div class="card-body">
+                    <!-- Producto A -->
+                    <div class="row g-2 mb-3 p-2 border rounded">
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/1.jpg"
+                          alt="Prod A"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Producto A</h5>
+                        <p class="text-muted d-block">Descripción breve...</p>
+                        <small class="text-muted d-block">Incluye IVA | 8 Puntos</small>
+                        <strong>$20.00</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                    <!-- Producto B -->
+                    <div class="row g-2 mb-3 p-2 border rounded">
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/17.jpg"
+                          alt="Prod B"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Producto B</h5>
+                        <p class="text-muted d-block">Descripción breve...</p>
+                        <small class="text-muted d-block">Incluye IVA | 12 Puntos</small>
+                        <strong>$20.00</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                    <!-- Producto C -->
+                    <div class="row g-2 p-2 border rounded">
+                      <div class="col-12 col-md-auto text-center">
+                        <img
+                          src="../../public/assets/img/elements/20.jpg"
+                          alt="Prod C"
+                          class="rounded"
+                          style="width: 250px; height: 250px; object-fit: cover;"
+                        />
+                      </div>
+                      <div class="col-12 col-md d-flex flex-column justify-content-center">
+                        <h5 class="mb-1">Producto A</h5>
+                        <p class="text-muted d-block">Descripción breve...</p>
+                        <small class="text-muted d-block">Incluye IVA | 20 Puntos</small>
+                        <strong>$20.00</strong>
+                        <button class="btn btn-sm btn-outline-primary mt-2" style="max-width: 150px;">Agregar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Columna Derecha para el Carrito (4 columnas) -->
+              <div class="col-lg-4 col-md-12 mb-4">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Carrito de Compras</h5>
+                    <span class="badge bg-label-info">0 Productos</span>
+                  </div>
+                  <div class="card-body">
+                    <div class="mb-3">
+                      <small class="text-muted d-block">No has agregado productos todavía.</small>
+                    </div>
+                    <hr>
+                    <!-- Opciones de pago (ejemplo) -->
+                    <div class="mb-3">
+                      <h6 class="mb-2">Opciones de Pago</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pago" id="tarjeta" checked>
+                        <label class="form-check-label" for="tarjeta">
+                          Tarjeta de Crédito/Débito
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pago" id="efectivo">
+                        <label class="form-check-label" for="efectivo">
+                          Efectivo
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="pago" id="credipuntos">
+                        <label class="form-check-label" for="credipuntos">
+                          Credipuntos
+                        </label>
+                      </div>
+                    </div>
+                    <hr>
+                    <!-- Botón de Procesar Compra -->
+                    <button class="btn btn-primary w-100" disabled>Procesar Compra</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <!-- / Content -->
+
+        
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , Hecho con ❤️ by
+                <a href="https://domsoft.dev" target="_blank" class="footer-link fw-bolder">DomSoft</a>
+              </div>
+              <div>
+                <a href="https://corporacionnuevoamanecer.net/compra-segura.html" class="footer-link me-4" target="_blank">Compra Segura</a>
+                <a href="https://corporacionnuevoamanecer.net/terminos-condiciones.html" target="_blank" class="footer-link me-4">Términos y Condiciones</a>
+                <a href="hhttps://corporacionnuevoamanecer.net/politicasdeprivacidad.html" target="_blank" class="footer-link me-4">Políticas de Privacidad</a>
+                <a href="https://corporacionnuevoamanecer.net/politicasdeenvio.html" target="_blank" class="footer-link me-4">Políticas de Envío</a>
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+        
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="../../public/assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../../public/assets/vendor/libs/popper/popper.js"></script>
+  <script src="../../public/assets/vendor/js/bootstrap.js"></script>
+  <script src="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <script src="../../public/assets/vendor/js/menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="../../public/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+  <!-- Main JS -->
+  <script src="../../public/assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="../../public/assets/js/dashboards-analytics.js"></script>
+
+  <!-- Script compra activa-->
+   <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              // Simulación de contador regresivo para la próxima compra
+              let countdownTime = 24 * 60 * 60; // 24 horas en segundos
+              const countdownDisplay = document.querySelector('.text-muted strong');
+
+              function updateCountdown() {
+                let hours = Math.floor(countdownTime / 3600);
+                let minutes = Math.floor((countdownTime % 3600) / 60);
+                let seconds = countdownTime % 60;
+                countdownDisplay.textContent = `${hours}H:${minutes}M:${seconds}S`;
+
+                // Disminuir el tiempo restante
+                countdownTime--;
+                if (countdownTime >= 0) {
+                  setTimeout(updateCountdown, 1000);
+                }
+              }
+
+              // Iniciar el contador
+              updateCountdown();
+            });
+          </script>
+
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

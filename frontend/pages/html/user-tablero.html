@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
+  data-assets-path="../../public/assets/" data-template="vertical-menu-template-free">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Dashboard | CNA</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../public/assets/img/favicon/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" href="../../public/assets/vendor/fonts/boxicons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../public/assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../../public/assets/vendor/css/theme-default.css"
+    class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="../../public/assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+  <link rel="stylesheet" href="../../public/assets/vendor/libs/apex-charts/apex-charts.css" />
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script src="../../public/assets/vendor/js/helpers.js"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="../../public/assets/js/config.js"></script>
+</head>
+
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
+
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="user-tablero.html" class="app-brand-link gap-2">
+            <span class="app-brand-logo demo">
+              <img src="../../public/assets/img/logo/logo.png" alt="Logo" width="120" />
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+          </a>
+        </div>
+
+        <div class="menu-inner-shadow"></div>
+
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Tablero</span>
+        </li>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboard -->
+          <li class="menu-item active">
+            <a href="user-tablero.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Analytics">Panel de Control</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="tienda-activate.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-store-alt"></i>
+              <div data-i18n="Basic">Tienda Activate</div>
+            </a>
+          </li>
+
+
+          <!-- Mi Red -->
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bxs-network-chart"></i>
+              <div data-i18n="Layouts">Mi Red</div>
+            </a>
+
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="user-mired-misbonos.html" class="menu-link">
+                  <div data-i18n="Without menu">Mis Bonos</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-misdirectos.html" class="menu-link">
+                  <div data-i18n="Without menu">Mis Directos</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-vistabinario.html" class="menu-link">
+                  <div data-i18n="Without navbar">Vista Binario</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-arbolmatriculador.html" class="menu-link">
+                  <div data-i18n="Container">Arbol de Matriculador</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-toplider.html" class="menu-link">
+                  <div data-i18n="Fluid">Top Líder</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-topventas.html" class="menu-link">
+                  <div data-i18n="Fluid">Top Ventas</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-topreclutador.html" class="menu-link">
+                  <div data-i18n="Blank">Top Reclutador</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-tiendacredito.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-store"></i>
+              <div data-i18n="Basic">Tienda de Crédito</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-saldowallet.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-wallet"></i>
+              <div data-i18n="Basic">Saldos Wallet</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-retiros.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+              <div data-i18n="Basic">Retiros</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-bancacna.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bxs-bank"></i>
+              <div data-i18n="Basic">Banca CNA</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-mensaje.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-envelope"></i>
+              <div data-i18n="Basic">Mensajes</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-herramientas.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-unlink"></i>
+              <div data-i18n="Basic">Herramientas</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-configuracion.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-cog"></i>
+              <div data-i18n="Basic">Configuración</div>
+            </a>
+          </li>
+
+          <li class="menu-header small text-uppercase">
+
+          </li>
+        </ul>
+      </aside>
+      <!-- / Menu -->
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <!-- Navbar -->
+
+        <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="bx bx-menu bx-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Información de estado y próxima compra -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item d-flex flex-column align-items-start me-4">
+                <span class="fw-semibold text-primary">Estado: <span class="badge bg-success">Activo</span></span>
+                <small class="text-muted mt-1">Próxima compra en: <strong>24D:14H:35M</strong></small>
+              </div>
+            </div>
+
+            <!-- Enlaces de usuario -->
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="../../public/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="../../public/assets/img/avatars/1.png" alt
+                              class="w-px-40 h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-semibold d-block">Juan Ortega</span>
+                          <small class="text-muted">Admin</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="miperfil.html">
+                      <i class="bx bx-user me-2"></i>
+                      <span class="align-middle">Mi Perfil</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="user-configuracion.html">
+                      <i class="bx bx-cog me-2"></i>
+                      <span class="align-middle">Configuración</span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-basic.html">
+                      <i class="bx bx-power-off me-2"></i>
+                      <span class="align-middle">Cerrar Sesión</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+        </nav>
+
+
+
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+              <div class="col-lg-8 mb-4 order-0">
+                <div class="card">
+                  <div class="d-flex align-items-end row">
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h5 class="card-title text-primary">Bienvenido Juan! 🎉</h5>
+                        <p class="mb-4">
+                          Has realizado un <span class="fw-bold">10%</span> más de ventas hoy. Mejora tus resultados
+                          y logra nuevos rangos.
+                        </p>
+
+                        <!-- Contenedor para el enlace y el botón de copiar -->
+                        <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center gap-2">
+                          <!-- Botón con el enlace -->
+                          <a href="javascript:;" class="btn btn-sm btn-outline-primary flex-grow-1 text-truncate"
+                            style="max-width: 100%;">https://corporacionnuevoamanecer.net/ref5674332</a>
+                          <!-- Botón para copiar -->
+                          <button class="btn btn-sm btn-outline-secondary" id="copyRefLink">
+                            Copiar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div class="col-sm-5 text-center text-sm-left">
+                      <div class="card-body pb-0 px-0 px-md-4">
+                        <img src="../../public/assets/img/illustrations/man-with-laptop-light.png" height="140"
+                          alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                          data-app-light-img="illustrations/man-with-laptop-light.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-4 order-1">
+                <div class="row">
+                  <div class="col-lg-6 col-md-12 col-6 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../../public/assets/img/icons/unicons/chart-success.png" alt="chart success"
+                              class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt3" data-bs-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt3">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="fw-semibold d-block mb-1">Saldo Wallet</span>
+                        <h3 class="card-title mb-2">$128,2</h3>
+                        <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +72.80%</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-6 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../../public/assets/img/icons/unicons/wallet-info.png" alt="Credit Card"
+                              class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt6" data-bs-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt6">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span>Comisión Total</span>
+                        <h3 class="card-title text-nowrap mb-1">$4,679</h3>
+                        <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.42%</small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Total Revenue -->
+              <div class="col-12 col-lg-8 order-2 order-md-3 order-lg-2 mb-4">
+                <div class="card" style="height: 100%;">
+                  <!-- Ajuste de altura para emparejar -->
+                  <div class="row row-bordered g-0">
+                    <!-- Gráficas de ingresos obtenidos -->
+                    <div class="col-md-8">
+                      <h5 class="card-header m-0 me-2 pb-3">Ingresos Obtenidos</h5>
+                      <div class="position-relative">
+                        <!-- Indicador de estado activo (estilo "tres puntos") -->
+                        <small
+                          class="position-absolute top-0 end-0 m-3 text-muted fw-semibold bg-light px-2 py-1 rounded"
+                          style="font-size: 0.85rem;">
+                          Próxima Compra: <span class="fw-bold">23D:14H:45M</span>
+                        </small>
+                      </div>
+                      <div class="d-flex justify-content-end px-3 pt-3">
+                        <select class="form-select form-select-sm w-auto">
+                          <option selected>2025</option>
+                          <option>2024</option>
+                          <option>2023</option>
+                        </select>
+                      </div>
+                      <div id="incomeChart" class="px-3 py-4" style="height: 200px;">
+                        <!-- Placeholder de la gráfica -->
+                        <p class="text-center text-muted">Gráfica de ingresos con indicadores: $0, $100, $200</p>
+                        <div class="d-flex justify-content-between px-3">
+                          <span>$0</span>
+                          <span>$100</span>
+                          <span>$200</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Reporte de la red -->
+                    <div class="col-md-4">
+                      <div class="card-body">
+                        <!-- Reporte de mi Red -->
+                        <h5 class="text-center mb-3">Reporte de mi Red</h5>
+                        <div class="row">
+                          <!-- Línea de Pago -->
+                          <div class="col-6">
+                            <h6 class="text-center">Línea de Pago</h6>
+                            <div class="bg-primary text-white text-center py-2 rounded">
+                              <p class="fw-bold fs-5 mb-0">2500</p>
+                            </div>
+                            <small class="text-muted d-block text-center mt-2">Puntos del equipo izquierdo</small>
+                          </div>
+                          <!-- Banco de Puntos -->
+                          <div class="col-6">
+                            <h6 class="text-center">Banco de Puntos</h6>
+                            <div class="bg-success text-white text-center py-2 rounded">
+                              <p class="fw-bold fs-5 mb-0">1800</p>
+                            </div>
+                            <small class="text-muted d-block text-center mt-2">Acumulado del equipo derecho</small>
+                          </div>
+                        </div>
+
+                        <!-- Información del perfil -->
+                        <div class="d-flex align-items-center mt-4">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../../public/assets/img/avatars/1.png" alt=""
+                                class="w-px-40 h-auto rounded-circle">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Juan Ortega</span>
+                            <small class="text-muted">Código: XYZ123</small>
+                          </div>
+                        </div>
+
+                        <!-- Separador -->
+                        <hr class="my-3">
+
+                        <!-- Información del patrocinador -->
+                        <div class="d-flex align-items-center">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="../../public/assets/img/avatars/2.png" alt=""
+                                class="w-px-40 h-auto rounded-circle">
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-semibold d-block">Patrocinador</span>
+                            <small class="text-muted">Código: ABC987</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--/ Total Revenue -->
+              <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
+                <div class="row">
+                  <div class="col-6 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../../public/assets/img/icons/unicons/paypal.png" alt="Credit Card"
+                              class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="d-block mb-1">Retiros Total</span>
+                        <h3 class="card-title text-nowrap mb-2">$2,456</h3>
+                        <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../../public/assets/img/icons/unicons/cc-primary.png" alt="Credit Card"
+                              class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt1" data-bs-toggle="dropdown"
+                              aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="cardOpt1">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="fw-semibold d-block mb-1">Credito Disponible</span>
+                        <h3 class="card-title mb-2">$14,7</h3>
+                        <small class="text-success fw-semibold"><i class="bx bx-up-arrow-alt"></i> +28.14%</small>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- </div>
+    <div class="row"> -->
+                  <div class="col-12 mb-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
+                          <!-- Información del mes y puntos -->
+                          <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
+                            <div class="card-title">
+                              <h5 class="text-nowrap mb-2">Reporte del Equipo</h5>
+                              <span class="badge bg-label-warning rounded-pill">Enero 2025</span>
+                            </div>
+                            <div class="mt-sm-auto">
+                              <small class="text-primary text-nowrap fw-semibold">
+                                <i class="bx bx-group"></i> Puntos de la Red:
+                              </small>
+                              <h3 class="mb-0 text-success">12,345</h3>
+                            </div>
+                          </div>
+                          <!-- Gráfico del equipo -->
+                          <div id="profileReportChart">
+                            <canvas id="teamPointsChart" height="100"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Order Statistics -->
+              <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex align-items-center justify-content-between pb-0">
+                    <div class="card-title mb-0">
+                      <h5 class="m-0 me-2">Historial de Bonos</h5>
+                      <small class="text-muted">Visualiza tus bonos recientes</small>
+                    </div>
+                    <div class="dropdown">
+                      <button class="btn p-0" type="button" id="bonoDropdown" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-dots-vertical-rounded"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="bonoDropdown">
+                        <a class="dropdown-item" href="javascript:void(0);">Recargar</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Filtrar</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <div class="d-flex flex-column align-items-center gap-1">
+                        <h2 class="mb-2 text-success">$3,425</h2>
+                        <span>Total Bonos</span>
+                      </div>
+                    </div>
+                    <ul class="p-0 m-0" style="max-height: 300px; overflow-y: auto;">
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-success">
+                            <i class="bx bx-dollar-circle"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Comisión Binaria</h6>
+                            <small class="text-muted">Fecha: 20/01/2025</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold text-success">$1,200</small>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-success">
+                            <i class="bx bx-group"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Bono por Directos</h6>
+                            <small class="text-muted">Fecha: 18/01/2025</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold text-success">$500</small>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-success">
+                            <i class="bx bx-credit-card"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Saldo Crédito</h6>
+                            <small class="text-muted">Fecha: 15/01/2025</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold text-success">$325</small>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-success">
+                            <i class="bx bx-trophy"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <h6 class="mb-0">Otros Bonos</h6>
+                            <small class="text-muted">Fecha: 10/01/2025</small>
+                          </div>
+                          <div class="user-progress">
+                            <small class="fw-semibold text-success">$400</small>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--/ Order Statistics -->
+
+              <!-- Expense Overview -->
+              <div class="col-md-6 col-lg-4 order-1 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <ul class="nav nav-pills" role="tablist">
+                      <li class="nav-item">
+                        <button type="button" class="nav-link active" role="tab" data-bs-toggle="tab"
+                          data-bs-target="#top-lider" aria-controls="top-lider" aria-selected="true">
+                          Top Líder
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                          data-bs-target="#top-reclutador" aria-controls="top-reclutador" aria-selected="false">
+                          Top Reclutador
+                        </button>
+                      </li>
+                      <li class="nav-item">
+                        <button type="button" class="nav-link" role="tab" data-bs-toggle="tab"
+                          data-bs-target="#top-vendedor" aria-controls="top-vendedor" aria-selected="false">
+                          Top Vendedor
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="dropdown">
+                      <button class="btn p-0" type="button" id="filterMenu" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-dots-vertical-rounded"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="filterMenu">
+                        <a class="dropdown-item" href="javascript:void(0);">Filtrar por Fecha Anterior</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body px-0">
+                    <div class="tab-content p-0">
+                      <!-- Top Líder -->
+                      <div class="tab-pane fade show active" id="top-lider" role="tabpanel">
+                        <div class="table-responsive px-3">
+                          <table class="table table-hover table-bordered text-nowrap" style="font-size: 12px;">
+                            <thead>
+                              <tr>
+                                <th class="text-center" style="width: 10%;">P.</th>
+                                <th style="width: 40%;">Líder</th>
+                                <th style="width: 30%;">ID</th>
+                                <th style="width: 20%;">Bono</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="table-warning">
+                                <td class="text-center">1</td>
+                                <td>Juan Pérez</td>
+                                <td>001</td>
+                                <td>$500</td>
+                              </tr>
+                              <tr class="table-success">
+                                <td class="text-center">2</td>
+                                <td>María López</td>
+                                <td>002</td>
+                                <td>$400</td>
+                              </tr>
+                              <tr class="table-info">
+                                <td class="text-center">3</td>
+                                <td>Carlos Sánchez</td>
+                                <td>003</td>
+                                <td>$300</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">4</td>
+                                <td>Ana González</td>
+                                <td>004</td>
+                                <td>$200</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- Top Reclutador -->
+                      <div class="tab-pane fade" id="top-reclutador" role="tabpanel">
+                        <div class="table-responsive px-3">
+                          <table class="table table-hover table-bordered text-nowrap" style="font-size: 12px;">
+                            <thead>
+                              <tr>
+                                <th class="text-center" style="width: 10%;">P.</th>
+                                <th style="width: 40%;">Líder</th>
+                                <th style="width: 30%;">ID</th>
+                                <th style="width: 20%;">Bono</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="table-warning">
+                                <td class="text-center">1</td>
+                                <td>Pedro Ramírez</td>
+                                <td>101</td>
+                                <td>$600</td>
+                              </tr>
+                              <tr class="table-success">
+                                <td class="text-center">2</td>
+                                <td>Laura Méndez</td>
+                                <td>102</td>
+                                <td>$500</td>
+                              </tr>
+                              <tr class="table-info">
+                                <td class="text-center">3</td>
+                                <td>Ricardo Díaz</td>
+                                <td>103</td>
+                                <td>$400</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">4</td>
+                                <td>Elena Torres</td>
+                                <td>104</td>
+                                <td>$300</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                      <!-- Top Vendedor -->
+                      <div class="tab-pane fade" id="top-vendedor" role="tabpanel">
+                        <div class="table-responsive px-3">
+                          <table class="table table-hover table-bordered text-nowrap" style="font-size: 12px;">
+                            <thead>
+                              <tr>
+                                <th class="text-center" style="width: 10%;">P.</th>
+                                <th style="width: 40%;">Líder</th>
+                                <th style="width: 30%;">ID</th>
+                                <th style="width: 20%;">Bono</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="table-warning">
+                                <td class="text-center">1</td>
+                                <td>Andrés Villa</td>
+                                <td>201</td>
+                                <td>$700</td>
+                              </tr>
+                              <tr class="table-success">
+                                <td class="text-center">2</td>
+                                <td>Gabriela Castro</td>
+                                <td>202</td>
+                                <td>$600</td>
+                              </tr>
+                              <tr class="table-info">
+                                <td class="text-center">3</td>
+                                <td>Sofía Moreno</td>
+                                <td>203</td>
+                                <td>$500</td>
+                              </tr>
+                              <tr>
+                                <td class="text-center">4</td>
+                                <td>Luis Vega</td>
+                                <td>204</td>
+                                <td>$400</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--/ Expense Overview -->
+
+              <!-- Transactions -->
+              <div class="col-md-6 col-lg-4 order-2 mb-4">
+                <div class="card h-100">
+                  <div class="card-header d-flex align-items-center justify-content-between">
+                    <h5 class="card-title m-0 me-2">Transacciones</h5>
+                    <div class="dropdown">
+                      <button class="btn p-0" type="button" id="transactionID" data-bs-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-dots-vertical-rounded"></i>
+                      </button>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
+                        <a class="dropdown-item" href="javascript:void(0);">Últimos 28 días</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Mes pasado</a>
+                        <a class="dropdown-item" href="javascript:void(0);">Último año</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body" style="max-height: 300px; overflow-y: auto;">
+                    <ul class="p-0 m-0">
+                      <!-- Saldo Crédito -->
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-primary">
+                            <i class="bx bx-wallet"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Saldo Crédito</small>
+                            <h6 class="mb-0">Envío de Dinero</h6>
+                          </div>
+                          <div class="user-progress d-flex flex-column align-items-end">
+                            <h6 class="mb-0 text-danger">-$82.6 USD</h6>
+                            <small class="text-muted d-block">Pendiente</small>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Transferencia -->
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-warning">
+                            <i class="bx bx-transfer"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Transferencia</small>
+                            <h6 class="mb-0">Dinero Recibido</h6>
+                          </div>
+                          <div class="user-progress d-flex flex-column align-items-end">
+                            <h6 class="mb-0 text-success">+$150.00 USD</h6>
+                            <small class="text-muted d-block">Recibido</small>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Saldo Wallet -->
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-success">
+                            <i class="bx bx-wallet"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Saldo Wallet</small>
+                            <h6 class="mb-0">Comisión</h6>
+                          </div>
+                          <div class="user-progress d-flex flex-column align-items-end">
+                            <h6 class="mb-0 text-success">+$200.00 USD</h6>
+                            <small class="text-muted d-block">Recibido</small>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Retiro de Saldo -->
+                      <li class="d-flex mb-4 pb-1">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-danger">
+                            <i class="bx bx-wallet"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Retiro de Saldo</small>
+                            <h6 class="mb-0">Cuenta Bancaria</h6>
+                          </div>
+                          <div class="user-progress d-flex flex-column align-items-end">
+                            <h6 class="mb-0 text-danger">-$75.00 USD</h6>
+                            <small class="text-muted d-block">Pendiente</small>
+                          </div>
+                        </div>
+                      </li>
+                      <!-- Tarjeta de Crédito -->
+                      <li class="d-flex">
+                        <div class="avatar flex-shrink-0 me-3">
+                          <span class="avatar-initial rounded bg-label-info">
+                            <i class="bx bx-credit-card"></i>
+                          </span>
+                        </div>
+                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                          <div class="me-2">
+                            <small class="text-muted d-block mb-1">Tarjeta de Crédito</small>
+                            <h6 class="mb-0">Pago de Compra</h6>
+                          </div>
+                          <div class="user-progress d-flex flex-column align-items-end">
+                            <h6 class="mb-0 text-danger">-$50.00 USD</h6>
+                            <small class="text-muted d-block">Rechazado</small>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!--/ Transactions -->
+            </div>
+          </div>
+          <!-- / Content -->
+
+          <!-- Script para copiar el enlace -->
+          <script>
+            document.getElementById('copyRefLink').addEventListener('click', function () {
+              const link = document.querySelector('.text-truncate').getAttribute('href');
+              navigator.clipboard.writeText(link).then(() => {
+                this.textContent = 'Copiado!';
+                setTimeout(() => {
+                  this.textContent = 'Copiar';
+                }, 2000);
+              });
+            });
+          </script>
+
+
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , Hecho con ❤️ by
+                <a href="https://domsoft.dev" target="_blank" class="footer-link fw-bolder">DomSoft</a>
+              </div>
+              <div>
+                <a href="https://corporacionnuevoamanecer.net/compra-segura.html" class="footer-link me-4"
+                  target="_blank">Compra Segura</a>
+                <a href="https://corporacionnuevoamanecer.net/terminos-condiciones.html" target="_blank"
+                  class="footer-link me-4">Términos y Condiciones</a>
+
+                <a href="hhttps://corporacionnuevoamanecer.net/politicasdeprivacidad.html" target="_blank"
+                  class="footer-link me-4">Políticas de Privacidad</a>
+
+                <a href="https://corporacionnuevoamanecer.net/politicasdeenvio.html" target="_blank"
+                  class="footer-link me-4">Políticas de Envío</a>
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="../../public/assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../../public/assets/vendor/libs/popper/popper.js"></script>
+  <script src="../../public/assets/vendor/js/bootstrap.js"></script>
+  <script src="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <script src="../../public/assets/vendor/js/menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="../../public/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+  <!-- Main JS -->
+  <script src="../../public/assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="../../public/assets/js/dashboards-analytics.js"></script>
+
+  <!-- Script compra activa-->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Simulación de contador regresivo para la próxima compra
+      let countdownTime = 24 * 60 * 60; // 24 horas en segundos
+      const countdownDisplay = document.querySelector('.text-muted strong');
+
+      function updateCountdown() {
+        let hours = Math.floor(countdownTime / 3600);
+        let minutes = Math.floor((countdownTime % 3600) / 60);
+        let seconds = countdownTime % 60;
+        countdownDisplay.textContent = `${hours}H:${minutes}M:${seconds}S`;
+
+        // Disminuir el tiempo restante
+        countdownTime--;
+        if (countdownTime >= 0) {
+          setTimeout(updateCountdown, 1000);
+        }
+      }
+
+      // Iniciar el contador
+      updateCountdown();
+    });
+  </script>
+
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

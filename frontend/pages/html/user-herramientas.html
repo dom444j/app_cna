@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../../public/assets/"
+  data-template="vertical-menu-template-free">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  <title>Dashboard | CNA</title>
+
+  <meta name="description" content="" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../../public/assets/img/favicon/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons. Uncomment required icon fonts -->
+  <link rel="stylesheet" href="../../public/assets/vendor/fonts/boxicons.css" />
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="../../public/assets/vendor/css/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="../../public/assets/vendor/css/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="../../public/assets/css/demo.css" />
+
+  <!-- Vendors CSS -->
+  <link rel="stylesheet" href="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+
+  <link rel="stylesheet" href="../../public/assets/vendor/libs/apex-charts/apex-charts.css" />
+
+  <!-- Page CSS -->
+
+  <!-- Helpers -->
+  <script src="../../public/assets/vendor/js/helpers.js"></script>
+
+  <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+  <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+  <script src="../../public/assets/js/config.js"></script>
+</head>
+
+<body>
+  <!-- Layout wrapper -->
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <!-- Menu -->
+
+      <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+        <div class="app-brand demo">
+          <a href="user-tablero.html" class="app-brand-link gap-2">
+            <span class="app-brand-logo demo">
+              <img src="../../public/assets/img/logo/logo.png" alt="Logo" width="120" />
+            </span>
+          </a>
+
+          <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+            <i class="bx bx-chevron-left bx-sm align-middle"></i>
+          </a>
+        </div>
+
+        <div class="menu-inner-shadow"></div>
+
+        <li class="menu-header small text-uppercase">
+          <span class="menu-header-text">Herramientas</span>
+        </li>
+
+        <ul class="menu-inner py-1">
+          <!-- Dashboard -->
+          <li class="menu-item">
+            <a href="user-tablero.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-home-circle"></i>
+              <div data-i18n="Analytics">Panel de Control</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="tienda-activate.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-store-alt"></i>
+              <div data-i18n="Basic">Tienda Activate</div>
+            </a>
+          </li>
+
+
+          <!-- Mi red -->
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link menu-toggle">
+              <i class="menu-icon tf-icons bx bxs-network-chart"></i>
+              <div data-i18n="Layouts">Mi Red</div>
+            </a>
+
+            <ul class="menu-sub">
+              <li class="menu-item">
+                <a href="user-mired-misbonos.html" class="menu-link">
+                  <div data-i18n="Without menu">Mis Bonos</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-misdirectos.html" class="menu-link">
+                  <div data-i18n="Without menu">Mis Directos</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-vistabinario.html" class="menu-link">
+                  <div data-i18n="Without navbar">Vista Binario</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-arbolmatriculador.html" class="menu-link">
+                  <div data-i18n="Container">Arbol de Matriculador</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-toplider.html" class="menu-link">
+                  <div data-i18n="Fluid">Top Líder</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-topventas.html" class="menu-link">
+                  <div data-i18n="Fluid">Top Ventas</div>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a href="user-mired-topreclutador.html" class="menu-link">
+                  <div data-i18n="Blank">Top Reclutador</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-tiendacredito.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-store"></i>
+              <div data-i18n="Basic">Tienda de Crédito</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-saldowallet.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-wallet"></i>
+              <div data-i18n="Basic">Saldos Wallet</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-retiros.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-transfer-alt"></i>
+              <div data-i18n="Basic">Retiros</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-bancacna.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bxs-bank"></i>
+              <div data-i18n="Basic">Banca CNA</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-mensaje.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-envelope"></i>
+              <div data-i18n="Basic">Mensajes</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item active">
+            <a href="user-herramientas.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-unlink"></i>
+              <div data-i18n="Basic">Herramientas</div>
+            </a>
+          </li>
+          <!-- Cards -->
+          <li class="menu-item">
+            <a href="user-configuracion.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-cog"></i>
+              <div data-i18n="Basic">Configuración</div>
+            </a>
+          </li>
+
+          <li class="menu-header small text-uppercase">
+
+          </li>
+        </ul>
+      </aside>
+      <!-- / Menu -->
+
+      <!-- Layout container -->
+      <div class="layout-page">
+        <!-- Navbar -->
+
+       <!-- Barra de nav -->
+       <nav
+       class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+       id="layout-navbar">
+       <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+         <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+           <i class="bx bx-menu bx-sm"></i>
+         </a>
+       </div>
+
+       <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+         <!-- Información de estado y próxima compra -->
+         <div class="navbar-nav align-items-center">
+           <div class="nav-item d-flex flex-column align-items-start me-4">
+             <span class="fw-semibold text-primary">Estado: <span class="badge bg-success">Activo</span></span>
+             <small class="text-muted mt-1">Próxima compra en: <strong>24D:14H:35M</strong></small>
+           </div>
+         </div>
+
+         <!-- Enlaces de usuario -->
+         <ul class="navbar-nav flex-row align-items-center ms-auto">
+
+           <!-- User -->
+           <li class="nav-item navbar-dropdown dropdown-user dropdown">
+             <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+               <div class="avatar avatar-online">
+                 <img src="../../public/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+               </div>
+             </a>
+             <ul class="dropdown-menu dropdown-menu-end">
+               <li>
+                 <a class="dropdown-item" href="#">
+                   <div class="d-flex">
+                     <div class="flex-shrink-0 me-3">
+                       <div class="avatar avatar-online">
+                         <img src="../../public/assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                       </div>
+                     </div>
+                     <div class="flex-grow-1">
+                       <span class="fw-semibold d-block">Juan Ortega</span>
+                       <small class="text-muted">Admin</small>
+                     </div>
+                   </div>
+                 </a>
+               </li>
+               <li>
+                 <div class="dropdown-divider"></div>
+               </li>
+               <li>
+                 <a class="dropdown-item" href="miperfil.html">
+                   <i class="bx bx-user me-2"></i>
+                   <span class="align-middle">Mi Perfil</span>
+                 </a>
+               </li>
+               <li>
+                 <a class="dropdown-item" href="user-configuracion.html">
+                   <i class="bx bx-cog me-2"></i>
+                   <span class="align-middle">Configuración</span>
+                 </a>
+               </li>
+               <li>
+                 <div class="dropdown-divider"></div>
+               </li>
+               <li>
+                 <a class="dropdown-item" href="auth-login-basic.html">
+                   <i class="bx bx-power-off me-2"></i>
+                   <span class="align-middle">Cerrar Sesión</span>
+                 </a>
+               </li>
+             </ul>
+           </li>
+           <!--/ User -->
+         </ul>
+       </div>
+     </nav>
+
+        <!-- / Navbar -->
+
+        <!-- Content wrapper -->
+        <div class="content-wrapper">
+          <!-- Content -->
+
+          <!-- Content -->
+          <div class="container-xxl flex-grow-1 container-p-y">
+            <div class="row">
+              <!-- Herramientas / Recursos -->
+              <div class="col-12 mb-4">
+                <div class="card">
+                  <div class="card-header d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Herramientas y Descargas</h5>
+                    <!-- Opcional: Filtro de tipo de archivo -->
+                    <select class="form-select form-select-sm w-auto">
+                      <option value="all">Todos</option>
+                      <option value="pdf">PDF</option>
+                      <option value="img">Imágenes</option>
+                      <option value="video">Videos</option>
+                    </select>
+                  </div>
+                  <div class="card-body">
+                    <!-- Opcional: Barra de búsqueda -->
+                    <div class="row g-2 align-items-center mb-3">
+                      <div class="col-sm-8">
+                        <input type="text" class="form-control form-control-sm" placeholder="Buscar herramientas..." />
+                      </div>
+                      <div class="col-sm-4 text-end">
+                        <button class="btn btn-sm btn-outline-secondary">Buscar</button>
+                      </div>
+                    </div>
+                    <hr />
+
+                    <!-- Lista de recursos -->
+                    <div class="row">
+                      <!-- Recurso 1 -->
+                      <div class="col-md-6 mb-3">
+                        <div class="d-flex p-2 border rounded align-items-center">
+                          <div class="flex-shrink-0 me-3">
+                            <!-- Ícono representativo del tipo de archivo (ej. PDF) -->
+                            <span class="avatar-initial rounded bg-label-danger p-3">
+                              <i class="bx bxs-file-pdf fs-4 text-white"></i>
+                            </span>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Folleto de Presentación</h6>
+                            <small class="text-muted d-block">Archivo PDF | 2MB</small>
+                          </div>
+                          <a href="ruta-de-descarga/folleto.pdf" class="btn btn-sm btn-outline-primary" download>
+                            Descargar
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- Recurso 2 -->
+                      <div class="col-md-6 mb-3">
+                        <div class="d-flex p-2 border rounded align-items-center">
+                          <div class="flex-shrink-0 me-3">
+                            <!-- Ícono para imágenes -->
+                            <span class="avatar-initial rounded bg-label-info p-3">
+                              <i class="bx bxs-image fs-4 text-white"></i>
+                            </span>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Imagen de Campaña</h6>
+                            <small class="text-muted d-block">JPG | 1.2MB</small>
+                          </div>
+                          <a href="ruta-de-descarga/campania.jpg" class="btn btn-sm btn-outline-primary" download>
+                            Descargar
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- Recurso 3 -->
+                      <div class="col-md-6 mb-3">
+                        <div class="d-flex p-2 border rounded align-items-center">
+                          <div class="flex-shrink-0 me-3">
+                            <!-- Ícono para videos -->
+                            <span class="avatar-initial rounded bg-label-success p-3">
+                              <i class="bx bxs-videos fs-4 text-white"></i>
+                            </span>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Video de Capacitación</h6>
+                            <small class="text-muted d-block">MP4 | 50MB</small>
+                          </div>
+                          <a href="ruta-de-descarga/capacitacion.mp4" class="btn btn-sm btn-outline-primary" download>
+                            Descargar
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- Recurso 4 -->
+                      <div class="col-md-6 mb-3">
+                        <div class="d-flex p-2 border rounded align-items-center">
+                          <div class="flex-shrink-0 me-3">
+                            <!-- Ícono para formularios (ejemplo) -->
+                            <span class="avatar-initial rounded bg-label-warning p-3">
+                              <i class="bx bx-file fs-4 text-white"></i>
+                            </span>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Formulario de Registro</h6>
+                            <small class="text-muted d-block">Documento Word | 200KB</small>
+                          </div>
+                          <a href="ruta-de-descarga/formulario.docx" class="btn btn-sm btn-outline-primary" download>
+                            Descargar
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- Agrega más recursos... -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- / Content -->
+
+          <!-- / Content -->
+
+
+
+          <!-- Footer -->
+          <footer class="content-footer footer bg-footer-theme">
+            <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+              <div class="mb-2 mb-md-0">
+                ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                , Hecho con ❤️ by
+                <a href="https://domsoft.dev" target="_blank" class="footer-link fw-bolder">DomSoft</a>
+              </div>
+              <div>
+                <a href="https://corporacionnuevoamanecer.net/compra-segura.html" class="footer-link me-4"
+                  target="_blank">Compra Segura</a>
+                <a href="https://corporacionnuevoamanecer.net/terminos-condiciones.html" target="_blank"
+                  class="footer-link me-4">Términos y Condiciones</a>
+
+                <a href="hhttps://corporacionnuevoamanecer.net/politicasdeprivacidad.html" target="_blank"
+                  class="footer-link me-4">Políticas de Privacidad</a>
+
+                <a href="https://corporacionnuevoamanecer.net/politicasdeenvio.html" target="_blank"
+                  class="footer-link me-4">Políticas de Envío</a>
+              </div>
+            </div>
+          </footer>
+          <!-- / Footer -->
+
+          <div class="content-backdrop fade"></div>
+        </div>
+        <!-- Content wrapper -->
+      </div>
+      <!-- / Layout page -->
+    </div>
+
+    <!-- Overlay -->
+    <div class="layout-overlay layout-menu-toggle"></div>
+  </div>
+
+
+  <!-- Core JS -->
+  <!-- build:js assets/vendor/js/core.js -->
+  <script src="../../public/assets/vendor/libs/jquery/jquery.js"></script>
+  <script src="../../public/assets/vendor/libs/popper/popper.js"></script>
+  <script src="../../public/assets/vendor/js/bootstrap.js"></script>
+  <script src="../../public/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+
+  <script src="../../public/assets/vendor/js/menu.js"></script>
+  <!-- endbuild -->
+
+  <!-- Vendors JS -->
+  <script src="../../public/assets/vendor/libs/apex-charts/apexcharts.js"></script>
+
+  <!-- Main JS -->
+  <script src="../../public/assets/js/main.js"></script>
+
+  <!-- Page JS -->
+  <script src="../../public/assets/js/dashboards-analytics.js"></script>
+
+  <!-- Script Reporte de Equipo-->
+  <script>
+    // Gráfico de puntos de la red
+    const ctx = document.getElementById('teamPointsChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Semana 1', 'Semana 2', 'Semana 3', 'Semana 4'],
+        datasets: [{
+          label: 'Puntos',
+          data: [3200, 4500, 2900, 1745],
+          backgroundColor: '#28a745',
+          borderColor: '#218838',
+          borderWidth: 1,
+        }, ],
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          },
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            grid: {
+              display: false,
+            },
+          },
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    });
+  </script>
+
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>

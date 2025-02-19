@@ -4,7 +4,15 @@ const SECRET_KEY = process.env.SECRET_KEY || "secreto_super_seguro";
 
 // Middleware para verificar JWT
 const verifyToken = (req, res, next) => {
-    const token = req.cookies.token;
+    let token = req.cookies.token; // Intentar obtener el token desde cookies
+
+    if (!token) {
+        const authHeader = req.headers["authorization"];
+        if (authHeader && authHeader.startsWith("Bearer ")) {
+            token = authHeader.split(" ")[1]; // Extraer el token del header
+        }
+    }
+
     if (!token) {
         return res.status(403).json({ error: 'Token requerido' });
     }

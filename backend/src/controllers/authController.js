@@ -1,6 +1,6 @@
-const bcrypt = require('bcryptjs');
-const jwt = require('jsonwebtoken');
-const { sequelize, User } = require('../models'); // Importamos la conexión con Sequelize y el modelo User
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
+const { sequelize, User } = require("../models"); // Importamos la conexión con Sequelize y el modelo User
 
 const SECRET_KEY = process.env.SECRET_KEY || "secreto_super_seguro";
 
@@ -14,7 +14,7 @@ async function login(req, res) {
 
         if (!user) {
             console.error("❌ Usuario no encontrado:", email);
-            return res.status(401).json({ error: 'Correo o contraseña incorrectos' });
+            return res.status(401).json({ error: "Correo o contraseña incorrectos" });
         }
 
         // Verificar la contraseña
@@ -23,19 +23,30 @@ async function login(req, res) {
 
         if (!isMatch) {
             console.error("❌ Contraseña incorrecta para usuario:", email);
-            return res.status(401).json({ error: 'Credenciales incorrectas' });
+            return res.status(401).json({ error: "Credenciales incorrectas" });
         }
 
         // Generar Token JWT
-        const token = jwt.sign({ id: user.id, role: user.role }, SECRET_KEY, { expiresIn: '2h' });
+        const token = jwt.sign({ id: user.id, role: user.role }, SECRET_KEY, {
+            expiresIn: "2h",
+        });
+
+        // Configuración de cookie dependiendo del entorno
+        const isProduction = process.env.NODE_ENV === "production";
 
         // Enviar Cookie con el token
-        res.cookie('token', token, { httpOnly: true, secure: true, sameSite: 'Strict' });
-        res.json({ message: 'Login exitoso', token });
+        res.cookie("token", token, {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production", // ✅ En producción debe ser true
+            sameSite: "Lax", // Para permitir autenticación en diferentes subdominios
+        });
+        
+        
 
+        res.json({ message: "Login exitoso", token });
     } catch (error) {
         console.error("❌ Error en login:", error);
-        res.status(500).json({ error: 'Error interno del servidor' });
+        res.status(500).json({ error: "Error interno del servidor" });
     }
 }
 
@@ -68,12 +79,11 @@ async function register(req, res) {
             password_hash: hashedPassword, // 🔹 Guardamos en la columna correcta
             full_name: "", // Se deja vacío si no se envía
             phone: "",
-            role: "user"
-        });        
+            role: "user",
+        });
 
         console.log("✅ Usuario registrado:", newUser);
         res.json({ message: "Registro exitoso", userId: newUser.id });
-
     } catch (error) {
         console.error("❌ Error en el registro:", error);
         res.status(500).json({ error: "Error interno del servidor" });
@@ -93,7 +103,7 @@ async function getUserById(req, res) {
         res.json(user);
     } catch (error) {
         console.error("❌ Error al obtener usuario:", error);
-        res.status(500).json({ error: 'Error interno del servidor' });
+        res.status(500).json({ error: "Error interno del servidor" });
     }
 }
 
@@ -112,7 +122,7 @@ async function updateUser(req, res) {
         res.json({ message: "Usuario actualizado correctamente" });
     } catch (error) {
         console.error("❌ Error al actualizar usuario:", error);
-        res.status(500).json({ error: 'Error interno del servidor' });
+        res.status(500).json({ error: "Error interno del servidor" });
     }
 }
 
@@ -130,18 +140,18 @@ async function deleteUser(req, res) {
         res.json({ message: "Usuario eliminado correctamente" });
     } catch (error) {
         console.error("❌ Error al eliminar usuario:", error);
-        res.status(500).json({ error: 'Error interno del servidor' });
+        res.status(500).json({ error: "Error interno del servidor" });
     }
 }
 
 // ✅ **Verificar token de usuario**
 function verifyToken(req, res) {
     const token = req.cookies.token;
-    if (!token) return res.status(401).json({ error: 'Acceso denegado' });
+    if (!token) return res.status(401).json({ error: "Acceso denegado" });
 
     jwt.verify(token, SECRET_KEY, (err, decoded) => {
-        if (err) return res.status(401).json({ error: 'Token inválido' });
-        res.json({ message: 'Token válido', user: decoded });
+        if (err) return res.status(401).json({ error: "Token inválido" });
+        res.json({ message: "Token válido", user: decoded });
     });
 }
 
@@ -160,5 +170,20 @@ function verifyAuth(req, res) {
     });
 }
 
+// ✅ **Cerrar sesión (eliminar cookie)**
+function logout(req, res) {
+    res.clearCookie("token");
+    res.json({ message: "Sesión cerrada correctamente" });
+}
+
 // ✅ **Exportar las funciones**
-module.exports = { register, login, getUserById, updateUser, deleteUser, verifyAuth, verifyToken };
+module.exports = {
+    register,
+    login,
+    getUserById,
+    updateUser,
+    deleteUser,
+    verifyAuth,
+    verifyToken,
+    logout,
+};

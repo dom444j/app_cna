@@ -2,6 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { Sequelize, DataTypes } = require("sequelize");
 const process = require("process");
+const dbConfig = require("../config/database"); // ✅ Importamos configuración
 
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || "development";
@@ -18,12 +19,15 @@ if (config.use_env_variable && process.env[config.use_env_variable]) {
   sequelize = new Sequelize(config.database, config.username, config.password, {
     host: config.host,
     dialect: config.dialect,
-    logging: false, // 🔹 Desactiva logs en consola
+    define: {
+      freezeTableName: true, // ✅ Evita pluralización automática de nombres de tablas
+    },
+    logging: false, // ✅ Desactiva logs en consola
   });
   console.log(`✅ Inicializando Sequelize con configuración separada`);
 }
 
-// ✅ Cargar todos los modelos automáticamente
+// ✅ Cargar modelos automáticamente desde el directorio
 fs.readdirSync(__dirname)
   .filter((file) => file.indexOf(".") !== 0 && file !== basename && file.slice(-3) === ".js")
   .forEach((file) => {
@@ -37,19 +41,29 @@ fs.readdirSync(__dirname)
   });
 
 // ✅ Importar manualmente modelos específicos para evitar problemas de carga
-const modelsToLoad = ["User", "UnilevelTree", "Transactions"];
+const modelsToLoad = [
+  "User",
+  "UnilevelTree",
+  "Transactions",
+  "Commissions",
+  "Purchase", // ✅ Aseguramos que sea "Purchase" y no "Purchases"
+  "Product",
+];
+
 modelsToLoad.forEach((modelName) => {
-  try {
-    const model = require(`./${modelName.toLowerCase()}`)(sequelize, DataTypes);
-    db[modelName] = model;
-  } catch (error) {
-    console.error(`❌ Error cargando manualmente el modelo ${modelName}:`, error);
+  if (!db[modelName]) {
+    try {
+      const model = require(`./${modelName.toLowerCase()}`)(sequelize, DataTypes);
+      db[modelName] = model;
+    } catch (error) {
+      console.error(`❌ Error cargando el modelo ${modelName}:`, error);
+    }
   }
 });
 
 // ✅ Establecer asociaciones de modelos si existen
 Object.keys(db).forEach((modelName) => {
-  if (typeof db[modelName].associate === "function") {
+  if (db[modelName] && typeof db[modelName].associate === "function") {
     db[modelName].associate(db);
   }
 });
@@ -59,4 +73,3 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 
 module.exports = db;
-

@@ -17,16 +17,19 @@ const userRoutes = require("./src/routes/users");
 const binaryRoutes = require("./src/routes/binaryRoutes");
 const compensationRoutes = require("./src/routes/compensationRoutes");
 const unilevelRoutes = require("./src/routes/unilevelRoutes"); // ✅ Rutas Unilevel
+const productRoutes = require("./src/routes/products"); // 🔹 Nueva ruta para productos
+const purchaseRoutes = require("./src/routes/purchases");
 
 // Middleware para parseo de JSON, cookies y CORS
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: ["https://tudominio.com", "http://localhost:3000"],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: ["http://localhost:3000", "http://localhost:5173"], // Asegura que el frontend esté incluido
+  credentials: true, // ✅ Permite enviar cookies
+}));
+
+
+
 
 // ✅ Definir las rutas de la API
 app.use("/api/auth", authRoutes);
@@ -34,6 +37,8 @@ app.use("/api/users", userRoutes);
 app.use("/api/binary", binaryRoutes);
 app.use("/api/compensation", compensationRoutes);
 app.use("/api/unilevel", unilevelRoutes); // ✅ Ruta Unilevel agregada correctamente
+app.use("/api/products", productRoutes); // 🔹 Nueva ruta de productos
+app.use("/api/purchases", purchaseRoutes);
 
 const SECRET_KEY = process.env.SECRET_KEY || "secreto_super_seguro";
 
